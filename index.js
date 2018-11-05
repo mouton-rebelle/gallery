@@ -1,6 +1,7 @@
 const express = require('express')
 const app = express()
-
+const cors = require('cors')
+app.use(cors())
 const frontApi = require('./api/front')
 const backApi = require('./api/back')
 
